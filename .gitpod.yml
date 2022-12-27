@@ -1,0 +1,5 @@
+tasks:
+  - init: git remote set-url origin git@github.com:pavithra-naagarajan/test-1.git && sed "s/\r$//" commit-command.sh | bash && gp open README.md
+vscode:
+ extensions:
+   - revaturePro.revature-labs
