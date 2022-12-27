@@ -31,16 +31,5 @@ public class HelloTestCheck {
         int sum = hi.evaluate("1+2+3");
         assertEquals(9, sum);
     }
-     @Test
-    public void evaluatesExpression_4() {
-        Hello hi = new Hello();
-        int sum = hi.evaluate("1+2+3");
-        assertEquals(9, sum);
-    }
-     @Test
-    public void evaluatesExpression_5() {
-        Hello hi = new Hello();
-        int sum = hi.evaluate("1+2+3");
-        assertEquals(9, sum);
-    }
+   
 }
