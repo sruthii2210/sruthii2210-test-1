@@ -1,22 +1,15 @@
-package com.example.javamavenjunithelloworld;
-
-
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package com.example;
 
 
 /**
- * Unit test for Hello.
- * <p/>
- * A unit test aims to test all code and code paths of a specific class.
+ * Simple class that says "Hello!".
  */
-public class HelloTest {
+public class Hello {
 
-    @Test
-    public void evaluatesExpression() {
-        Hello hi = new Hello();
-        int sum = hi.evaluate("1+2+3");
-        assertEquals(9, sum);
-    }
+public int evaluate(String expression) {
+    int sum = 0;
+    for (String summand : expression.split("\\+"))
+        sum += Integer.valueOf(summand);
+    return sum;
+}
 }
